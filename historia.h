@@ -58,4 +58,5 @@
 // creo un repositorio en i7/unsa TANQUES-4
 // subo a github
 // clono en dell y agrego esta linea
+// cambio desde el CLON en i7
 
