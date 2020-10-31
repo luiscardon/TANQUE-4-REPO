@@ -57,3 +57,5 @@
 //  31 de octubre de 2020
 // creo un repositorio en i7/unsa TANQUES-4
 // subo a github
+// clono en dell y agrego esta linea
+
