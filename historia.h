@@ -54,3 +54,6 @@
   // Modelo de Kleinbach de tanque estratificado
   // verificar los retoques en el calculo de mp_i
 
+//  31 de octubre de 2020
+// creo un repositorio en i7/unsa TANQUES-4
+// subo a github
