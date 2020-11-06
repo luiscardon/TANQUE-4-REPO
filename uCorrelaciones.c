@@ -9,6 +9,7 @@
 // por conveccion
 // Luis Cardon 14 de abril 2014
 
+// 5/nov/2020, Gnielinski
 
 double Num_Colburn(double Re,double Pr)
 {
@@ -153,4 +154,20 @@ float Num_McAdams(float Ra)
    {Nu=0.15*pow(Ra,0.333);}
   
  return Nu;
+}
+
+float Nu_Gnielinski(float Re, float Pr)
+{
+  // 
+  float f,Nu;
+  
+  f=pow(1.182*log(Re)-1.64, -2.);
+
+  if (Re< 2300)
+    Nu= 3.66;
+  else // (Nu < 5.E6)
+  { Nu = (f/8)*(Re-1000.)*Pr;
+    Nu=Nu / (1.+ 12.7*sqrt(f/8)*(pow(Pr, 2./3)-1.) );
+  }
+return Nu;      
 }

@@ -7,7 +7,9 @@
 // por conveccion
 // Luis Cardon 14 de abril 2014
 
-// Porque Num?
+// 5/nov/2020, Gnielinski
+
+// Porque Num? medio?
 // Ojo no todas estan terminadas
 double Num_Colburn(double Re,double Pr);
 double Num_Zhukauskas(double Re,double Pr,double Prs,double indice);
@@ -15,6 +17,7 @@ double Num_Churchill_Bernstein(double Re,double Pr);
 double Num_Dittus_Boelter(double Re,double Pr); // HACER
 double Num_Sieder_Tate(double Gz, double Tm,double Ts); // OJO prop
 double Num_Hausen(double Gz);
+float  Nu_Gnielinski(float Re, float Pr);
 
 double Nu_Hollands(double Ra, float Pr, float beta);
 float  Nu_cilindro_vert(float Pr, float Ra); //HACER

@@ -1,12 +1,12 @@
-TARGET = parcial-optica
+TARGET = rtubo
 
-$(TARGET): parcial-ERII-opticas-2c-2020.o libSE.a
+$(TARGET): R-tubo.o libSE.a
 	gcc $^ -o $@ -lm
 
-parcial-ERII-opticas-2c-2020.o: parcial-ERII-opticas-2c-2020.c  
+R-corto.o: R-tubo.c  
 	gcc -c $< -o $@ -lm
 
-libSE.a: lib1.o lib2.o lib3.o lib4.o lib5.o lib6.o lib7.o lib8.o
+libSE.a: lib1.o lib2.o lib3.o lib4.o lib5.o lib6.o lib7.o lib8.o lib9.o
 	ar rcs $@ $^ 
 
 lib1.o: uCorrelaciones.c uCorrelaciones.h
@@ -33,6 +33,9 @@ lib7.o: uSSS.c uSSS.h param.h uEstructuras.h
 	gcc -c -o $@ $< -lm
 
 lib8.o: uTanques.c  uTanques.h param.h uEstructuras.h
+	gcc -c -o $@ $< -lm
+
+lib9.o: uPropiedades.c  uPropiedades.h param.h uEstructuras.h uPropFisicas.h
 	gcc -c -o $@ $< -lm
 
 clean:

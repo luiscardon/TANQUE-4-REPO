@@ -110,12 +110,14 @@ struct s_controlador
 struct propiedades
 {
   float rho;
-  float cp;
+  float Cp;
   float nu;
   float mu;
   float alpha;
   float k;
   float Pr;
+  float gban;
+  float beta;
 };
 
 typedef struct propiedades pro;
